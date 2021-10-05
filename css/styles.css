@@ -1,0 +1,92 @@
+/* .some-title {
+    font-size: 22px;
+    color: brown;
+} */
+
+/* Универсальный селектор
+Селектор элемента
+Селектор ID
+Селектор класса
+Селектор атрибута
+Селектор потомка
+Селектор ребенка
+
+ */
+
+body {
+    color: blueviolet;
+}
+
+.some-link {
+    color: inherit;
+}
+
+/* .some-list .some-item .some-link {
+    color: teal;
+}
+
+.some-text {
+    color: teal;
+}
+
+.some-text {
+    color: tomato;
+}
+
+.some-text {
+    color: brown;
+}
+
+.some-link {
+    color: green;
+}
+
+.some-link.link a {
+    color: blue;
+}
+
+.some-link.link {
+    color: red;
+}
+
+.some-link {
+    color: green;
+} */
+
+/* ссилка не наследует цвет
+button не наследует font-family
+заголовки не наследуют размер и жирность шрифта
+адрес не наследует font-style */
+
+.some-item {
+    background-color: khaki;
+}
+
+a {
+    outline: none;
+}
+
+.some-link:hover {
+    background-color: lightseagreen;
+}
+
+.some-link:focus {
+    background-color: lightseagreen;
+}
+
+.btn {
+    background-color: lightsteelblue;
+}
+
+.some-link.current {
+    color: blue;
+}
+
+/* .btn:hover,
+.btn:focus {
+    background-color: maroon;
+} */
+
+.btn:active {
+    background-color: mediumvioletred;
+}
