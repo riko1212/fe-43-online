@@ -29,22 +29,23 @@ body {
     text-decoration: none;
 }
 
-/* @keyframes rotator {
+@keyframes rotator {
     0% {
-        transform: rotate(0deg) translate(0px) scale(0);
+        transform: rotate(0deg) translate(0);
         border-radius: 0;
+        background-color: green;
     }
-
     50% {
-        transform: rotate(360deg) translate(100px) scale(1);
         border-radius: 50%;
+        background-color: orangered;
+        transform: rotate(180deg) translate(20px);
     }
-
     100% {
-        transform: rotate(720deg) translate(0px) scale(0);
+        transform: rotate(360deg) translate(-20px);
         border-radius: 0;
+        background-color: blueviolet;
     }
-} */
+}
 
 /* @keyframes translator {
     0% {
@@ -142,12 +143,12 @@ body {
 
 .rotate {
     background-color: green;
-    transition: transform 500ms linear, background-color 500ms linear;
+
+    animation: rotator 2000ms linear 0ms infinite alternate;
 }
 
 .rotate:hover {
-    transform: rotate(180deg) scale(1.8);
-    background-color: red;
+    animation-play-state: running;
 }
 
 .scale {
@@ -179,14 +180,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     background-color: gray;
-    animation-name: rotator;
-    animation-timing-function: linear;
-    animation-duration: 4000ms;
-    animation-delay: 0ms;
-    animation-iteration-count: 2;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation: rotator 4000ms linear 0ms, translator 4000ms linear 0ms;
+   
 }
 
 .block:hover {
