@@ -16,5 +16,71 @@
   </head>
   <body>
     <!-- Поговорим о прекрасном - о формах -->
+    <form class="contact-form">
+      <input
+        class="contact-form-input"
+        name="name"
+        type="text"
+        placeholder="Your name *"
+        required
+      />
+
+      <input
+        class="contact-form-input"
+        name="email"
+        type="email"
+        placeholder="Your email *"
+        required
+      />
+
+      <input
+        class="contact-form-input"
+        name="tel"
+        type="tel"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="099-666-33-22"
+        placeholder="Your tel *"
+        required
+      />
+
+      <div class="contact-form-group" role="group" aria-labelledby="age">
+        <p id="age">Your Age</p>
+
+        <input name="age" id="age-10" type="radio" class="contact-form-radio" />
+        <label for="age-10">10</label>
+
+        <input name="age" id="age-20" type="radio" class="contact-form-radio" />
+        <label for="age-20">20</label>
+
+        <input name="age" id="age-30" type="radio" class="contact-form-radio" />
+        <label for="age-30">30</label>
+      </div>
+
+      <fieldset class="contact-form-group">
+        <legend>Your Hobby</legend>
+        <label>
+          <input type="checkbox" class="contact-form-radio" />
+          football
+        </label>
+
+        <label>
+          <input type="checkbox" class="contact-form-radio" />
+          fishing
+        </label>
+
+        <label>
+          <input type="checkbox" class="contact-form-radio" />
+          auto
+        </label>
+      </fieldset>
+
+      <textarea
+        class="contact-form-message"
+        name="message"
+        placeholder="Your message"
+      ></textarea>
+
+      <button class="contact-form-button" type="submit">Submit</button>
+    </form>
   </body>
 </html>
