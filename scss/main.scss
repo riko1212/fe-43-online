@@ -1,6 +1,8 @@
 //UTILS
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
 
 //BASE
 @import './base/common';
@@ -10,7 +12,7 @@
 @import './components/section';
 @import './components/modal-btn';
 @import './components/social-links';
-@import './components/suptitle';
+@import './components/subtitle';
 @import './components/description';
 @import './components/title';
 @import './components/social-list';

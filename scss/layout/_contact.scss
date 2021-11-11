@@ -1,9 +1,17 @@
 .contact-data {
-  background-color: #191c26;
-  background-image: url('../images/contact/bg.png');
-  background-position: right center;
-  background-size: 50% auto;
-  background-repeat: no-repeat;
+  background: {
+    color: #191c26;
+    image: url('../images/contact/bg.png');
+    position: right center;
+    size: 50% auto;
+    repeat: no-repeat;
+  }
+
+  // background-color: #191c26;
+  // background-image: url('../images/contact/bg.png');
+  // background-position: right center;
+  // background-size: 50% auto;
+  // background-repeat: no-repeat;
 }
 
 .contact-data-container {
