@@ -34,14 +34,14 @@ address {
 }
 
 /* 💥  Сброс стилей у кнопки */
-button {
+/* button {
   padding: 0;
   border: none;
   font: inherit;
   color: inherit;
   background-color: transparent;
   cursor: pointer;
-}
+} */
 
 /* 💥  Стили для обнуления базовых свойств у списков (ul) */
 ul {
@@ -51,18 +51,92 @@ ul {
 }
 
 /* 💥 Стили для обнуления базовых свойств у ссылок */
-a {
+/* a {
   text-decoration: none;
   color: inherit;
+} */
+
+body {
+  min-height: 100vh;
 }
 
 /*? ========== MIN-WIDTH MAX-WIDTH ========== */
 
+/* @media screen and (min-width: 580px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/*@media screen and (min-width: 768px) {
+  body {
+    background-color: teal;
+  }
+} */
+/*
+@media screen and (max-width: 479px) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: tomato;
+    margin-bottom: 30px;
+  }
+} */
+
 /*? ========== AND ========== */
+
+/* @media screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: green;
+  }
+} */
 
 /*? ========== OR ========== */
 
+/* body {
+  background-color: green;
+}
+
+@media screen and (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: #fff;
+  }
+} */
+
 /*? ========== TYPES ========== */
+
+/*
+  all
+  screen
+  print
+  speech
+*/
+
+/* @media screen {
+  .menu {
+    display: none;
+  }
+  .link {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+  .section-descr {
+    font-size: 24px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  button {
+    display: none;
+  }
+} */
 
 /*? ========== ORIENTATION ========== */
 
@@ -74,3 +148,16 @@ a {
 288dpi - 3x
 384dpi - 4x
 */
+
+body {
+  background-image: url('../Img.jpg');
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  body {
+    background-image: url('../Img@2x.jpg');
+  }
+}

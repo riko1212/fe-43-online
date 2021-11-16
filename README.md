@@ -6,14 +6,14 @@
 
 TODO - Часть 1
 
-- Немного об истоках адаптивной верстки
-- [Adaptive vs Responsive](https://codepen.io/Luxplanjay/pen/Ovoyoo?editors=1100)
-- Dev Tools
+- Немного об истоках адаптивной верстки ✔
+- [Adaptive vs Responsive](https://codepen.io/Luxplanjay/pen/Ovoyoo?editors=1100) ✔
+- Dev Tools ✔
 - Медиа-запросы и важность мета-тега "viewport"
-  - MIN-WIDTH MAX-WIDTH
-  - AND
-  - OR
-  - TYPES
+  - MIN-WIDTH MAX-WIDTH ✔
+  - AND✔
+  - OR✔
+  - TYPES✔
   - ORIENTATION
 
 TODO - Часть 2
