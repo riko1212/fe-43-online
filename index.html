@@ -25,8 +25,9 @@
   </head>
 
   <body>
+    <!-- <div class="container"></div> -->
     <!-- HEADER -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo header__logo link animate__bounce" href="./">
@@ -48,23 +49,42 @@
               <a class="menu__link link" href="#feedback">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <a class="header__tel-link link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button
-          class="modal-btn modal-btn-theme-dark"
+        </nav> -->
+
+    <!-- START Mobile Menu -->
+    <!-- <button class="burger-btn" data-menu-open>
+          <svg class="burger-icon-icon">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu" data-menu>
+          <button class="close-btn" data-menu-close>
+            <svg class="close-btn-icon">
+              <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+
+          <p class="test">+38 096 111 11 11</p>
+        </div> -->
+    <!-- END Mobile Menu -->
+
+    <!-- <a class="header__tel-link link" href="tel:+380441111111"
+      >+38 044 111 11 11</a
+    > -->
+    <!-- <button
+          class="modal-btn modal-btn__header modal-btn-theme-dark"
           type="button"
           data-modal-open
         >
           онлайн-запись
         </button>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- HERO -->
-      <section class="hero">
-        <div class="container hero-container">
+      <!-- <section class="hero"> -->
+      <!-- <div class="container hero-container">
           <div class="hero-left-side">
             <ul class="social-links-list hero-social-links-list list">
               <li class="socail-links-list-item">
@@ -89,8 +109,8 @@
               и со вкусом.
             </p>
           </div>
-        </div>
-      </section>
+        </div> -->
+      <!-- </section> -->
 
       <!-- ABOUT -->
       <section class="about section" id="about">
@@ -98,27 +118,91 @@
           <div class="about-left-side">
             <ul class="about-list list">
               <li class="about-list-item">
-                <img
-                  class="about-list-img"
-                  src="./images/about/about-img-1.jpg"
-                  alt="мастер бреет бороду клиенту"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/about-img-desktop-1.webp    1x,
+                      ./images/about/about-img-desktop-1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/about-img-desktop-1.jpg    1x,
+                      ./images/about/about-img-desktop-1@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/about/about-img-tablet-1.webp    1x,
+                      ./images/about/about-img-tablet-1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/about/about-img-tablet-1.jpg    1x,
+                      ./images/about/about-img-tablet-1@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="about-list-img"
+                    src="#"
+                    alt="мастер бреет бороду клиенту"
+                  />
+                </picture>
               </li>
               <li class="about-list-item">
-                <img
-                  class="about-list-img"
-                  src="./images/about/about-img-2.jpg"
-                  alt="мастер стрижет клиента"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/about-img-desktop-2.webp    1x,
+                      ./images/about/about-img-desktop-2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/about-img-desktop-2.jpg    1x,
+                      ./images/about/about-img-desktop-2@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/about/about-img-tablet-2.webp    1x,
+                      ./images/about/about-img-tablet-2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/about/about-img-tablet-2.jpg    1x,
+                      ./images/about/about-img-tablet-2@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="about-list-img"
+                    src="#"
+                    alt="мастер стрижет клиента"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
           <div class="about-right-side">
-            <h2 class="subtitle subtitle-theme-light">О НАС</h2>
+            <h2 class="suptitle suptitle-theme-light">О НАС</h2>
             <h3 class="title title-theme-light about-title">
               Лучший Барбершоп твоего города
             </h3>
@@ -139,7 +223,7 @@
       </section>
 
       <!-- SERVICES -->
-      <section class="services section" id="services">
+      <!-- <section class="services section" id="services">
         <div class="container">
           <p class="subtitle subtitle-theme-dark">
             Проведи время в компании лучших мастеров
@@ -191,10 +275,10 @@
             онлайн-запись
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- ADVANTAGES -->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container advantages-container">
           <div class="advantages-left-side">
             <ul class="advantages-list list">
@@ -231,10 +315,10 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- MASTERS -->
-      <section class="masters section" id="masters">
+      <!-- <section class="masters section" id="masters">
         <div class="container">
           <p class="subtitle subtitle-theme-light">
             для настоящих ценителей атмосферы
@@ -372,10 +456,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- GALLERY -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <h2 class="visually-hidden">Галерея работ</h2>
           <p class="subtitle subtitle-theme-light gallery-subtitle">
@@ -420,18 +504,18 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <div class="contact-data">
-        <div class="container contact-data-container">
-          <!-- FEEDBACK -->
-          <section class="feedback section" id="feedback">
+      <!-- <div class="contact-data"> -->
+      <!-- <div class="container contact-data-container"> -->
+      <!-- FEEDBACK -->
+      <!-- <section class="feedback section" id="feedback">
             <h2 class="title title-theme-dark contact-data-title">
               Онлайн-запись
             </h2>
-          </section>
-          <!-- CONTACT INFORMATION -->
-          <section class="contact-info section">
+          </section> -->
+      <!-- CONTACT INFORMATION -->
+      <!-- <section class="contact-info section">
             <h2 class="title title-theme-dark contact-data-title">Контакты</h2>
             <address class="contact-info-address">
               <ul class="contact-list list">
@@ -471,12 +555,12 @@
             </address>
             <p class="subtitle subtitle-theme-dark">время работы</p>
             <p class="contact-date">Ежедневно с 9:00 до 22:00</p>
-          </section>
-        </div>
-      </div>
+          </section> -->
+      <!-- </div> -->
+      <!-- </div> -->
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <a class="logo link animate__bounce" href="./">
           <svg class="logo-icon" width="68" height="54">
@@ -495,9 +579,9 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
         <form action="#" class="modal-form">
@@ -554,8 +638,9 @@
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
